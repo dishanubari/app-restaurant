@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip to content */
+.skip-link {
+  position: absolute;
+  top: -52px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 16px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.image {
+  padding: 8px 16px;
+  width: 100%;
+}
+
+/*
+  Main Content
+*/
+
+main {
+  width: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.content .content__heading {
+  font-weight: normal;
+  margin-top: 18px;
+}
+
+/*
+  Restaurants
+*/
+
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 12px 0;
+  
+}
+
+/*
+  Restaurant Item
+*/
+
+.restaurants-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+ 
+}
+
+.restaurants-item__header {
+  position: relative;
+}
+
+.restaurants-item .restaurants-item__header .restaurants-item__header__picture {
+width: 100%;
+height: 270px;
+object-fit: cover;
+object-position: center;width: 100%;
+}
+
+.restaurants-item .restaurants-item__header .restaurants-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.restaurants-item
+  .restaurants-item__header
+  .restaurants-item__header__rating
+  .restaurants-item__header__rating__score {
+  margin-left: 10px;
+}
+
+.restaurants-item .restaurants-item__content {
+  padding: 16px;
+}
+
+.restaurants-item .restaurants-item__content h3 {
+  margin: 0 0 10px 0;
+}
+
+.restaurants-item .restaurants-item__content h3 a {
+  color: #db0000;
+  text-decoration: none;
+  text-align: center;
+  font-size: larger;
+  padding: 16px 0;
+  font-size: 23px;
+}
+
+.restaurants-item .restaurants-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+/*
+  Movie
+*/
+
+/*
+  Detail Restaurant 
+*/
+.content__heading {
+  padding: 8px 16px;
+}
+
+.restaurant {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 23px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+
+.restaurant__picture {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.restaurant-item .restaurant-item__header .restaurant-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.restaurant .restaurant__info h4 {
+  margin: 8px 0;
+}
+
+.restaurant__info {
+  padding: 9px 18px 9px;
+}
+
+.description {
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+.restaurant__name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.restaurant_address,
+.restaurant_city {
+  margin-top: 3px;
+  font-size: 14px;
+  color: gray;
+}
+
+.restaurant__description {
+  font-size: 16px;
+  margin-top: 8px;
+  line-height: 200%;
+}
+
+.restaurant_overview {
+  padding: 9px 18px 9px;
+}
+
+.restaurant_list_food,
+.restaurant_list_drink {
+  padding: 4px;
+}
+
+.food_title,
+.drink_title {
+  font-size: 18px;
+}
+
+.list_food li,
+.list_drink li {
+  font-size: 16px;
+  margin-left: 24px;
+  line-height: 200%;
+  margin-top: 3px;
+}
+
+/*
+   Like
+*/
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Review */
+.review {
+    margin: 0;
+    padding: 23px 0;
+    background-color: #f8d66f;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.review > h2,
+.review_item {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 0.7rem;
+}
+
+.review > small {
+  margin-top: 3px;
+  font-size: 14px;
+  color: gray;
+}
+
+.review_item {
+    background: right/contain content-box border-box no-repeat white;
+}
+
+.review_item > small,
+.review_item > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  background: #ffcd38;
+}
+
+.footer-p {
+  font-size: larger;
+  font-weight: 500;
+  font-size: 15px;
+}
